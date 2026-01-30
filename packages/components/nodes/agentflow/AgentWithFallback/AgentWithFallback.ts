@@ -64,7 +64,7 @@ interface ISimpliefiedTool {
     }
 }
 
-class AgentWithFallback_Agentflow implements INode {
+class AgentWithFallback_AgentFlows implements INode {
     label: string
     name: string
     version: number
@@ -84,6 +84,7 @@ class AgentWithFallback_Agentflow implements INode {
         this.version = 1.0
         this.type = 'Agent'
         this.category = 'Agent Flows'
+        this.icon = 'agentflow/agent-with-fallback.svg'
         this.description = 'Agent with primary and fallback models for resilient execution without flow interruption'
         this.color = '#FF6B6B'
         this.baseClasses = [this.type]
@@ -2397,4 +2398,4 @@ class AgentWithFallback_Agentflow implements INode {
     }
 }
 
-module.exports = { nodeClass: AgentWithFallback_Agentflow }
+module.exports = { nodeClass: AgentWithFallback_AgentFlows }
